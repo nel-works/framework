@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyProject — Documentation</title>
+  <title>NEL FW | Documentation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Syne:wght@400;600;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -14,7 +14,7 @@
   <aside id="sidebar">
     <div class="sidebar-brand">
       <span class="brand-icon">◈</span>
-      <span class="brand-name">MyProject</span>
+      <span class="brand-name">NEL FW</span>
       <span class="brand-version">v1.0</span>
     </div>
 
@@ -22,13 +22,9 @@
       <div class="nav-section">
         <span class="nav-label">Getting Started</span>
         <a href="#introduction" class="nav-link active" onclick="setActive(this)">Introduction</a>
-        <a href="#installation" class="nav-link" onclick="setActive(this)">Installation</a>
-        <a href="#quickstart" class="nav-link" onclick="setActive(this)">Quick Start</a>
       </div>
       <div class="nav-section">
         <span class="nav-label">Core Concepts</span>
-        <a href="#configuration" class="nav-link" onclick="setActive(this)">Configuration</a>
-        <a href="#usage" class="nav-link" onclick="setActive(this)">Usage</a>
         <a href="#api" class="nav-link" onclick="setActive(this)">API Reference</a>
       </div>
       <div class="nav-section">
@@ -40,7 +36,7 @@
     </nav>
 
     <div class="sidebar-footer">
-      <a href="https://github.com/yourusername/yourrepo" target="_blank" class="gh-link">
+      <a href="https://github.com/nel-works/framework" target="_blank" class="gh-link">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         GitHub
       </a>
@@ -59,135 +55,64 @@
       <!-- INTRODUCTION -->
       <section id="introduction" class="doc-section">
         <div class="section-tag">01 / Introduction</div>
-        <h1 class="page-title">Welcome to MyProject</h1>
-        <p class="lead">A short, punchy sentence about what your project does and why someone should care about it.</p>
-        <p>Expand here with a paragraph or two explaining the problem this project solves. Keep it honest and concrete — avoid marketing language. Focus on what the user gains.</p>
+        <h1 class="page-title">Welcome to</h1>
+        <h1 class="page-title">NEL FW</h1>
+        <p class="lead">This is an advanced battlegrounds framework with some unique features.</p>
+        <p>My framework makes developing battlegrounds genre games better and faster. It has features like code-skill builder, fast-n-safe networking system, mostly OOP based and many other features that would make the development easier.</p>
         <div class="callout callout-info">
-          <strong>Note:</strong> This is a template. Replace all placeholder text, links, and code samples with your real content.
-        </div>
-      </section>
-
-      <!-- INSTALLATION -->
-      <section id="installation" class="doc-section">
-        <div class="section-tag">02 / Installation</div>
-        <h2>Installation</h2>
-        <p>Install via your package manager of choice:</p>
-        <div class="code-block">
-          <div class="code-header">
-            <span class="code-lang">bash</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre><code># npm
-npm install myproject
-
-# yarn
-yarn add myproject
-
-# pnpm
-pnpm add myproject</code></pre>
-        </div>
-
-        <h3>Requirements</h3>
-        <ul>
-          <li>Node.js <strong>18+</strong></li>
-          <li>npm / yarn / pnpm</li>
-          <li>Any other dependency</li>
-        </ul>
-      </section>
-
-      <!-- QUICK START -->
-      <section id="quickstart" class="doc-section">
-        <div class="section-tag">03 / Quick Start</div>
-        <h2>Quick Start</h2>
-        <p>Get up and running in under a minute:</p>
-        <div class="code-block">
-          <div class="code-header">
-            <span class="code-lang">javascript</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre><code>import { MyProject } from 'myproject';
-
-const client = new MyProject({
-  apiKey: 'YOUR_API_KEY',
-});
-
-const result = await client.doSomething({ input: 'Hello world' });
-console.log(result);</code></pre>
-        </div>
-      </section>
-
-      <!-- CONFIGURATION -->
-      <section id="configuration" class="doc-section">
-        <div class="section-tag">04 / Configuration</div>
-        <h2>Configuration</h2>
-        <p>All options passed to the constructor:</p>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><code>apiKey</code></td><td>string</td><td>—</td><td>Required. Your API key.</td></tr>
-              <tr><td><code>timeout</code></td><td>number</td><td>5000</td><td>Request timeout in ms.</td></tr>
-              <tr><td><code>retries</code></td><td>number</td><td>3</td><td>Number of retry attempts.</td></tr>
-              <tr><td><code>debug</code></td><td>boolean</td><td>false</td><td>Enable verbose logging.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- USAGE -->
-      <section id="usage" class="doc-section">
-        <div class="section-tag">05 / Usage</div>
-        <h2>Usage</h2>
-        <p>Describe common patterns and workflows here. Break complex topics into sub-sections.</p>
-
-        <h3>Basic Example</h3>
-        <div class="code-block">
-          <div class="code-header">
-            <span class="code-lang">javascript</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre><code>// Basic usage pattern
-const response = await client.method({
-  param1: 'value1',
-  param2: true,
-});</code></pre>
-        </div>
-
-        <h3>Advanced Example</h3>
-        <p>Describe edge cases, advanced options, or less obvious patterns.</p>
-        <div class="callout callout-warn">
-          <strong>Warning:</strong> Mention any footguns or things that can go wrong here.
+          <strong>Note:</strong> The framework is still in W.I.P. state.
         </div>
       </section>
 
       <!-- API REFERENCE -->
       <section id="api" class="doc-section">
-        <div class="section-tag">06 / API Reference</div>
+        <div class="section-tag">02 / API Reference</div>
         <h2>API Reference</h2>
 
         <div class="api-entry">
-          <div class="api-signature"><code>client.doSomething(options)</code></div>
-          <p>Short description of what this method does.</p>
-          <h4>Parameters</h4>
+          <div class="api-signature"><code>entity.new() : entity</code></div>
+          <p>Creates a new OOP-based entity class for Players and NPCs.</p>
+          <h4>Arguments</h4>
           <div class="table-wrap">
             <table>
               <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
               <tbody>
-                <tr><td><code>input</code></td><td>string</td><td>Yes</td><td>The input value.</td></tr>
-                <tr><td><code>options</code></td><td>object</td><td>No</td><td>Additional options.</td></tr>
+                <tr><td><code>player</code></td><td>(Player | Model)</td><td>Yes</td><td>The player entity will be based on.</td></tr>
               </tbody>
             </table>
           </div>
           <h4>Returns</h4>
-          <p>Promise resolving to a <code>Result</code> object.</p>
+          <p>A new OOP-based class <code>self</code>.</p>
+          <h4>Example</h4>
+          <div class="code-block">
+          <div class="code-header">
+            <span class="code-lang">luau</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><code>local players        = game:GetService 'Players'
+local script_service = game:GetService 'ServerScriptService'
+            
+local server_game  = script_service.server.game
+local server_utils = script_service.server.utils
+
+local entity_class = require( server_game.modules.entity )
+local entity_list  = require( server_utils.entity_list   )
+
+players.PlayerAdded:Connect(function(player : Player)
+  local entity = entity_class.new(player)
+  
+  entity_list.add(entity)
+  entity:initialise()
+
+  print(entity)
+end)</code></pre>
+        </div>
         </div>
       </section>
 
       <!-- EXAMPLES -->
       <section id="examples" class="doc-section">
-        <div class="section-tag">07 / Examples</div>
+        <div class="section-tag">03 / Examples</div>
         <h2>Examples</h2>
         <p>Link to real-world examples or embed them here.</p>
         <ul>
@@ -199,7 +124,7 @@ const response = await client.method({
 
       <!-- FAQ -->
       <section id="faq" class="doc-section">
-        <div class="section-tag">08 / FAQ</div>
+        <div class="section-tag">04 / FAQ</div>
         <h2>FAQ</h2>
         <details class="faq-item">
           <summary>How do I do X?</summary>
@@ -217,14 +142,14 @@ const response = await client.method({
 
       <!-- CHANGELOG -->
       <section id="changelog" class="doc-section">
-        <div class="section-tag">09 / Changelog</div>
+        <div class="section-tag">05 / Changelog</div>
         <h2>Changelog</h2>
         <div class="changelog-entry">
           <div class="changelog-version">v1.0.0</div>
           <div class="changelog-date">June 2026</div>
           <ul>
-            <li>Initial release</li>
-            <li>Added core features X, Y, Z</li>
+            <li>Started on documentation</li>
+            <li>Made the core of the framework</li>
           </ul>
         </div>
       </section>
